@@ -11,6 +11,7 @@ CMD ["node","index.js"]
 ## Build the Docker File
 ```
  docker build -t myapp .
+ docker build -t myapp:v1 .
 ```
 ## Stopping and Starting the containers
 ```
@@ -24,3 +25,14 @@ docker stop mycontainer
 docker start mycon
 
 ```
+
+## Managing Image and containers
+
+```
+docker image rm imageName
+docker image rm imageName -f
+docker container rm mycontainer
+docker system prune -a
+
+```
+
