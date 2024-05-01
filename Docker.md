@@ -17,7 +17,9 @@ CMD ["node","index.js"]
 docker images
 docker run --name mycontainer Idimage
 docker ps
+docker ps -a
 docker stop containerID
 docker run --name ContainerName -p 3000:3000 -d Idimage
+docker stop mycontainer
 
 ```
