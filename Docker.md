@@ -12,3 +12,12 @@ CMD ["node","index.js"]
 ```
  docker build -t myapp .
 ```
+## Making and exposing the file in the outer layer
+```
+docker images
+docker run --name mycontainer Idimage
+docker ps
+docker stop containerID
+docker run --name ContainerName -p 3000:3000 -d Idimage
+
+```
