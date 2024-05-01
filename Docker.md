@@ -21,6 +21,7 @@ docker ps
 docker ps -a
 docker stop containerID
 docker run --name ContainerName -p 3000:3000 -d Idimage
+docker run --name ContainerName -p 3000:3000 -d Idimage:v1
 docker stop mycontainer
 docker start mycon
 
@@ -34,5 +35,25 @@ docker image rm imageName -f
 docker container rm mycontainer
 docker system prune -a
 
+ ```
+
+## Volumes == Directry mapping
+```bash
+docker run --name myapp_c_nodemon -p 3000:3000 --rm -v C:\Users\yubraj\Desktop\Coding\Docker:/index -v /Docker/node_modules myapp:nodemon
+
 ```
+= intended to  work but not working =
+```js
+let a="hello"
+console.log("hello")
+```
+
+```diff
+- const a="ok"
++ const a="bg"
+
+```
+
+
+  
 
