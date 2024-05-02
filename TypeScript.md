@@ -12,4 +12,10 @@
 function add(name: string, email: string, isPaid: boolean=false){
 we are making the ispaid deafult false so it doesnt make problem later in the file
 }
+
+function return(num:number):number{
+return "hello"
+// This saids return only number string is now allowded
+}
+
 ```
