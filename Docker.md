@@ -60,6 +60,8 @@ services:
 ```
 docker system prune
 docker-compose up
+docker-compose down
+docker-compose down --rmi all -v
 ```
 
 
