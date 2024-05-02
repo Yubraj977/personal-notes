@@ -59,6 +59,7 @@ services:
 ```
 ```
 docker system prune
+docker-compose up
 ```
 
 
