@@ -7,6 +7,9 @@
 ```
 
 ## Function
+##### Function argumests should have the typechecking
 ```typescript
-function add(){}
+function add(name: string, email: string, isPaid: boolean=false){
+we are making the ispaid deafult false so it doesnt make problem later in the file
+}
 ```
