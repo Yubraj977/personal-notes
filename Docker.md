@@ -42,16 +42,23 @@ docker system prune -a
 docker run --name myapp_c_nodemon -p 3000:3000 --rm -v C:\Users\yubraj\Desktop\Coding\Docker:/index -v /Docker/node_modules myapp:nodemon
 
 ```
-= intended to  work but not working =
-```js
-let a="hello"
-console.log("hello")
+
+## Docker compose
+```yaml
+
+version: '3.8'
+services:
+  api:
+    build: ./api
+    container_name: api_c
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./api:/index
+      - ./app/node_modules
 ```
-
-```diff
-- const a="ok"
-+ const a="bg"
-
+```
+docker system prune
 ```
 
 
